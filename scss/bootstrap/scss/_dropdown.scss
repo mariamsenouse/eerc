@@ -134,12 +134,13 @@
   padding: $dropdown-item-padding-y $dropdown-item-padding-x;
   clear: both;
   font-weight: $font-weight-normal;
-  color: $dropdown-link-color;
+  color:white !important;
   text-align: inherit; // For `<button>`s
   text-decoration: if($link-decoration == none, null, none);
   white-space: nowrap; // prevent links from randomly breaking onto new lines
   background-color: transparent; // For `<button>`s
   border: 0; // For `<button>`s
+  color: white
 
   // Prevent dropdown overflow if there's no padding
   // See https://github.com/twbs/bootstrap/pull/27703
@@ -195,7 +196,7 @@
 .dropdown-item-text {
   display: block;
   padding: $dropdown-item-padding-y $dropdown-item-padding-x;
-  color: $dropdown-link-color;
+  color: white !important;
 }
 
 // Dark dropdowns
@@ -206,7 +207,7 @@
   @include box-shadow($dropdown-dark-box-shadow);
 
   .dropdown-item {
-    color: $dropdown-dark-link-color;
+    color: white !important;
 
     &:hover,
     &:focus {
@@ -231,7 +232,7 @@
   }
 
   .dropdown-item-text {
-    color: $dropdown-dark-link-color;
+    color: white !important;
   }
 
   .dropdown-header {
